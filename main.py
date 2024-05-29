@@ -50,7 +50,7 @@ next_page_token=data['nextPageToken']
 data_main=data['resources']
 n=0
 
-for x in range(1):
+for x in range(counter):
     data=asset_explorer("aws",next_page_token)
     next_page_token=data['nextPageToken']
     data_main.extend(data['resources'])
